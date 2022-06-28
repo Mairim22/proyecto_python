@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Te presento a mi Familia</h1>
+    {% for personas in familias %}
+    <tr>
+        <td><p style="color:blue">{{personas.parentesco}}</p></td>
+        <td>{{personas.nombre}}</td>
+        <td>{{personas.edad}}</td>
+        <td>{{personas.nacimiento}}</td>
+    </tr>
+    {% endfor %}
+</body>
+</html>
+
